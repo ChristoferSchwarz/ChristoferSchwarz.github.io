@@ -1,45 +1,44 @@
 @charset "utf-8";
 /* CSS Document */
-/*html {
+html {
   scroll-behavior: smooth;
-}*/
+}
 ::-webkit-scrollbar {
-    width: 14px;
-    height: 18px;
+  width: 14px;
+  height: 18px;
 }
 ::-webkit-scrollbar-thumb {
-    border: 4px solid rgba(0, 0, 0, 0);
-    background-clip: padding-box;
-
-    -webkit-border-radius: 7px;
-border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
-    width: 0;
-    height: 0;
-    display: none;
+  width: 0;
+  height: 0;
+  display: none;
 }
 ::-webkit-scrollbar-corner {
-    background-color: transparent;
+  background-color: transparent;
 }
+
 body {
   margin: 0;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  background-color: #2e2e2e;
-	    overflow: overlay;
+  background-color: #1e1e1e;
+  overflow: overlay;
 }
 p {
   color: white;
-	font-weight: 300;
-	letter-spacing: 0.5px;
-	margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
-::selection{
-	background-color: #e37c2d;
+::selection {
+  background-color: #e37c2d;
 }
-
 
 .header {
   position: -webkit-sticky; /* Safari */
@@ -47,17 +46,16 @@ p {
   top: -138px;
   display: flex;
   width: 100%;
-	height: 310px;
+  height: auto;
 }
 .name {
-	  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; /* Safari */
   position: sticky;
-	display: absolute;
-  top: -138px;
+  display: absolute;
   margin: 0;
   height: 100%;
   width: 50%;
-	  z-index: 3;
+  z-index: 3;
 }
 h1 {
   font-size: 6.854em;
@@ -76,7 +74,7 @@ h1 {
   right: 0;
   top: 0;
   margin: 0;
-  width: 45%;
+  width: 50%;
   z-index: 3;
 }
 .menu {
@@ -85,8 +83,8 @@ h1 {
 }
 .menuli {
   display: inline-block;
-	margin: 0 12px;
-	border-radius: 4px;
+  margin: 0 12px;
+  border-radius: 4px;
 }
 .menubtn {
   display: inline-block;
@@ -95,7 +93,7 @@ h1 {
   color: #000000;
   margin: 4px 8px;
   text-align: center;
-	font-weight: 500;
+  font-weight: 500;
 }
 .menubtn:hover {
   font-weight: 700;
@@ -112,41 +110,41 @@ h1 {
   visibility: hidden;
 }
 button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-	    outline: none;
-	cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
+.hamburger {
+  display: none;
+}
 
 .whoami {
   display: flex;
-	position: relative;
+  position: relative;
   justify-content: flex-end;
-	align-items: center;
+  align-items: center;
   width: 100%;
-  scroll-margin-top: 40px;
-	margin-bottom: 200px;
+  scroll-margin-top: 80px;
+  margin-bottom: 200px;
   overflow: visible;
-	
 }
+.whotitle {
+  display: block;
+}
+
+.whotitlemobile {
+  display: none;
+}
+
 .containerwhobild {
   display: block;
   position: relative;
-  width: 28%;
-height: 1000px;
+  width: 35%;
+  height: 1000px;
   top: 10%;
-	right: 150px;
+  right: 5%;
 }
 .whobild {
   z-index: 2;
@@ -172,20 +170,12 @@ height: 1000px;
 }
 .whotext {
   display: block;
-	z-index: -1;
-	position: absolute;
-	top: 10%;
+  z-index: -1;
+  position: absolute;
+  top: 10%;
   width: 50%;
-	left: 150px;
-
+  left: 5%;
 }
-
-
-
-
-
-
-
 
 h2 {
   font-size: 4.236em;
@@ -199,49 +189,42 @@ h3 {
   font-size: 2.618em;
   font-weight: 400;
   color: white;
-	margin: 0 0 24px 0;
+  margin: 0 0 24px 0;
 }
 
-
-.proj1{
-	height: 1000px;
-	background-color: #151515;
-	padding: 40px;
-	
+.proj1 {
+  height: 1000px;
+  background-color: #151515;
+  padding: 40px;
 }
-.proj2{
-
-	height: 1000px;
-	background-color: #9F4647;
-		padding: 40px;
+.proj2 {
+  height: 1000px;
+  background-color: #9f4647;
+  padding: 40px;
 }
-.proj3{
-
-	height: 1000px;
-	background-color: #eeeeee;
-		padding: 40px;
+.proj3 {
+  height: 1000px;
+  background-color: #eeeeee;
+  padding: 40px;
 }
-.proj4{
-
-	height: 1000px;
-	background-color: #646464;
-		padding: 40px;
+.proj4 {
+  height: 1000px;
+  background-color: #646464;
+  padding: 40px;
 }
 
-.whatcanido{
-	  scroll-margin-top: 138px;
+.whatcanido {
+  scroll-margin-top: 138px;
 }
-.projtitle{
-	margin: 0;
-	color: white;
+.projtitle {
+  margin: 0;
+  color: white;
 }
-
-
 
 .whatintro {
   padding: 40px;
   text-align: center;
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .whattext {
@@ -249,92 +232,331 @@ h3 {
   font-weight: 300;
   font-size: 1em;
 }
-.contact{
-	height: 600px;
-	  scroll-margin-top: 0px;
-	width: 80%;
-	margin: 50px auto;
+.contact {
+  height: 600px;
+  scroll-margin-top: 220px;
+  width: 80%;
+  margin: 50px auto;
 }
-.email{
-	text-decoration: none;
-	color: white;
-}
-
-.scrollaupp{
-	position: fixed;
-	cursor: default;
-	height: 80px;
-	width: 80px;
-	bottom: -16px;
-	right: 64px;
-	display: block;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 200ms ease;
-}
-.projekt1{
-	margin: 80px auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.content{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	column-gap: 40px;
-	padding: 40px;
-}
-.projektrubrik{
-	margin: 0 auto;
-}
-.projekttext{
-	max-width: 600px;
-	min-width: 400px;
-}
-.projektbild1{
-		max-width: 600px;
-	min-width: 400px;
-	height: inherit;
-	background-color: #505050;
+.contact h2 {
+  color: white;
+  margin-bottom: 60px;
 }
 
+.contact img {
+  height: 40px;
+  margin-right: 16px;
+}
+.email {
+  text-decoration: none;
+  color: white;
+}
 
+.contact p {
+  font-size: 20px;
+}
 
+.scrollaupp {
+  position: fixed;
+  cursor: default;
+  height: 80px;
+  width: 80px;
+  bottom: -16px;
+  right: 64px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.projekt1 {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 40px;
+  padding: 40px;
+}
+.projektrubrik {
+  margin: 0 auto;
+}
+.projekttext {
+  max-width: 600px;
+  min-width: 400px;
+}
+.projektbild1 {
+  max-width: 600px;
+  min-width: 400px;
+  height: inherit;
+  background-color: #505050;
+}
+.form {
+  width: 50%;
+  float: right;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 32px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+}
 
+input[type="text"]:focus {
+}
+
+input[type="submit"] {
+  display: block;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+label {
+  color: white;
+}
+.contactleft {
+  margin-top: 120px;
+  width: 40%;
+  float: left;
+  text-align: center;
+}
 
 .footer {
-	height: 180px;
-	  padding: 60px 200px 0 100px;
-	margin-top: 150px;
+  height: auto;
+  padding: 60px 5% 0 5%;
+  margin-top: 150px;
 }
-.footercontainer{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.signature{
-max-width: 780px;
-	min-width: 500px;
+.signature {
+  width: 400px;
 }
-.footesocial{
+.footesocial {
 }
-.footersocialicon{
-	height: 30px;
-	color: black;
-	margin: 0 20px;
+.footersocialicon {
+  height: 30px;
+  color: black;
+  margin: 0 16px;
 }
 
-.copyright{
-	font-size: 0.8em;
-	font-weight: 300;
-	margin-top: 36px;
-	color: black;
-	text-align: center;
+.copyright {
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 36px;
+  color: black;
+  text-align: center;
+}
+@media only screen and (max-width: 525px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 2.618em;
+    line-height: 120%;
+  }
+
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 16px;
+  }
+  .hamburger img {
+    display: block;
+    height: 24px;
+    width: 24px;
+  }
+
+  .header {
+    top: -62px;
+  }
+  .whoami {
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .whotext {
+    position: relative;
+    width: 80%;
+    left: auto;
+    right: auto;
+    margin-top: 40px;
+  }
+  .containerwhobild {
+    width: 60%;
+    order: -1;
+    margin: 0 auto;
+    top: auto;
+    right: auto;
+    height: 360px;
+  }
+  .whobild {
+    height: 360px;
+  }
+  .name h1 {
+    margin: 16px 16px;
+  }
+  .whotitle {
+    display: none;
+  }
+  .contact {
+    height: 840px;
+  }
+  .whotitlemobile {
+    display: block;
+    order: -2;
+    z-index: -1;
+    margin-bottom: 40px;
+  }
+  .footercontainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .form {
+    width: 100%;
+    clear: both;
+  }
+  .contactleft {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contact h2 {
+    margin: 32px 0;
+  }
+  .signature {
+    width: 90%;
+  }
+  .whatintro {
+    padding: 32px 0;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .whatintro h2 {
+    margin: 0;
+  }
 }
 
+@media only screen and (max-width: 880px) and (min-width: 526px) {
+  h1 {
+    font-size: 4.236em;
+    line-height: 120%;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .hamburger img {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
 
+  .header {
+    top: -100px;
+  }
+  .whoami {
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whotext {
+    position: relative;
+    width: 80%;
+    left: auto;
+    right: auto;
+    margin-top: 80px;
+  }
+  .containerwhobild {
+    width: 60%;
+    order: -1;
+    margin: 0 auto;
+    top: auto;
+    right: auto;
+    height: 600px;
+  }
+  .whobild {
+    height: 600px;
+  }
+  .name h1 {
+    margin: 20px 40px;
+  }
+  .whotitle {
+    display: none;
+  }
+  .contact {
+    height: 840px;
+  }
+  .whotitlemobile {
+    display: block;
+    order: -2;
+    z-index: -1;
+    margin-bottom: 40px;
+  }
+  .footercontainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .form {
+    width: 100%;
+    clear: both;
+  }
+  .contactleft {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
-
-
+@media only screen and (max-width: 1200px) and (min-width: 881px) {
+  h1 {
+    font-size: 4.236em;
+    line-height: 120%;
+  }
+  .navbar {
+    width: 75%;
+  }
+  .menuli {
+    margin: 0;
+  }
+  .header {
+    top: -100px;
+  }
+  .containerwhobild {
+    top: 160px;
+  }
+  .whoami {
+    top: -40px;
+  }
+  .name h1 {
+    margin: 20px 40px;
+  }
+}
