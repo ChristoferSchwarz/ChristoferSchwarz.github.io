@@ -63,6 +63,7 @@ function parallax() {
         document.body.scrollTop = 0; // För Safari
         document.documentElement.scrollTop = 0;
       }
-      function kontakt() {
+      // Visar errortexten under kontaktformuläret
+function kontakt() {
         document.getElementById("error").style.visibility = "visible";
       }
