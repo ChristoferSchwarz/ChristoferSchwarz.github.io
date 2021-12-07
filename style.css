@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+/* Ändrar utseendet på scollbaren */
 ::-webkit-scrollbar {
   width: 14px;
   height: 18px;
@@ -101,6 +102,7 @@ h1 {
 .menubtn:active {
   font-weight: 700;
 }
+/* Detta gör att inte länkarna hoppar runt när man hovrar */
 .menubtn::before {
   display: block;
   content: attr(title);
