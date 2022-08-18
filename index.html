@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <!--
+<!--
 
  ____  ____   _   _  
 |_   ||   _| (_) | | 
@@ -11,263 +11,271 @@
                      
 
 Welcome to my code, I hope you find it interesting :)                  
+I wrote it from scratch, so heads up, it might be a bit messy..
 
 Have a nice day!
 
-/Chris              
+/Christofer              
 
 -->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Christofer Schwarz – Portfolio</title>
-    <meta
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Christofer Schwarz – Portfolio</title>
+<meta
       name="description"
       content="The digital design portfolio of Christofer Schwarz."
     />
-    <meta name="author" content="Christofer Schwarz" />
+<meta name="author" content="Christofer Schwarz" />
 
-    <!-- OPEN GRAPH FÖR SOCIALA MEDIER-->
-    <meta property="og:title" content="Design by Christofer Schwarz" />
-    <meta property="og:type" content="website" />
-    <meta
+<!-- OPEN GRAPH FÖR SOCIALA MEDIER-->
+<meta property="og:title" content="Design by Christofer Schwarz" />
+<meta property="og:type" content="website" />
+<meta
       property="og:description"
       content="The digital design porfolio of Christofer Schwarz"
     />
-    <!--<meta property="og:url" content="https://www.MINURL.com/">-->
-    <!--<meta property="og:image" content="COVERBILD.png">-->
+<!--<meta property="og:url" content="https://www.MINURL.com/">--> 
+<!--<meta property="og:image" content="COVERBILD.png">--> 
 
-    <!-- Favicons, fonts, etc -->
-    <link rel="icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+<!-- Favicons, fonts, etc -->
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body id="hem">
-    <!-- Header och navbar -->
-    <header id="header" class="header">
-      <section class="name">
-        <a href="#hem" class="logo">
-          <h1>
-            Christofer<br />
-            Schwarz
-          </h1>
-        </a>
-      </section>
-    </header>
-
-    <nav class="navbar" id="navbar">
-      <a href="#" class="hamburger"
+<link rel="stylesheet" href="style.css" />
+</head>
+<body id="hem">
+<!-- Header och navbar -->
+<header id="header" class="header">
+  <section class="name"> <a href="#hem" class="logo">
+    <h1> Christofer<br />
+      Schwarz </h1>
+    </a> </section>
+</header>
+<nav class="navbar" id="navbar"> <a href="javascript:void(0);" class="hamburger" onclick="menuOpen()"
         ><img src="img/menu.svg" alt="menu button"
       /></a>
-      <ul class="menu">
-        <li class="menuli" id="menuli1">
-          <a href="#whoami" class="menubtn" id="menubtn1" title="Who am I?"
+  <ul class="menu">
+    <li class="menuli" id="menuli1"> <a href="#whoami"  class="menubtn" id="menubtn1" title="Who am I?"
             >Who am I?</a
-          >
-        </li>
-        <li class="menuli" id="menuli2">
-          <a
+          > </li>
+    <li class="menuli" id="menuli2"> <a
             href="#whatcanido"
             class="menubtn"
             id="menubtn2"
             title="What can I do?"
             >What can I do?</a
-          >
-        </li>
-        <li class="menuli" id="menuli3">
-          <a href="#contact" class="menubtn" id="menubtn3" title="Contact"
+          > </li>
+    <li class="menuli" id="menuli3"> <a href="#contact" class="menubtn" id="menubtn3" title="Contact"
             >Contact</a
-          >
-        </li>
-        <li class="menuli">
-          <button type="button" onClick="color()">
-            <img
+          > </li>
+    <li class="menuli">
+      <button type="button" onClick="color()"> <img
               alt="Change Color!"
               src="img/palette.svg"
               style="height: 16px"
-            />
-          </button>
-        </li>
-      </ul>
-    </nav>
+            /> </button>
+    </li>
+  </ul>
+</nav>
+<nav class="mobilemenu" id="mobilemenu"> <a href="#hem" onClick="menuClose()">
+  <h1 style=" float: left; font-size: 12vw; color: black; margin: 16px 0 0 16px;"> Christofer<br />
+    Schwarz </h1>
+  </a> <a href="javascript:void(0);" onclick="menuClose()"> <img src="img/close.svg" alt="close button" style="float: right; margin: 40px 40px 0 0; height: 40px;"></a>
+  <div class="mobilenav">
+    <ul>
+      <li> <a href="#whoami" onclick="menuClose()" title="Who am I?"
+            >Who am I?</a
+          > </li>
+      <li> <a
+            href="#whatcanido"
+          onclick="menuClose()"
+            title="What can I do?"
+            >What can I do?</a
+          > </li>
+      <li > <a href="#contact" onclick="menuClose()" title="Contact"
+            >Contact</a
+          > </li>
+      <li >
+        <button type="button" onClick="color()"> <img
+              alt="Change Color!"
+              src="img/palette.svg"
+              style="height: 40px"
+            /> </button>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Vem är jag? -->
+<!-- Vem är jag? -->
 
-    <article id="whoami" class="whoami">
-      <h3 class="whotitlemobile">Who am I?</h3>
-      <aside class="whotext" id="whotext">
-        <h3 class="whotitle">Who am I?</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu ut odio
-          ut nibh amet lectus donec. Aenean porttitor nunc nullam et malesuada
-          vestibulum, in. Sit duis urna congue tellus ultrices interdum auctor.
-          Neque, proin adipiscing pretium, turpis vulputate purus massa. Rutrum
-          vestibulum velit pellentesque eget cras mi mi eu. Lectus risus amet
-          ornare imperdiet eget ultricies. Ullamcorper mattis cursus suspendisse
-          senectus diam. Interdum lacinia id lacus rutrum nec. Turpis arcu,
-          turpis nibh amet libero purus libero. <br />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu ut odio
-          ut nibh amet lectus donec. Aenean porttitor nunc nullam et malesuada
-          vestibulum, in. Sit duis urna congue tellus ultrices interdum auctor.
-          <br />
-          <br />
-          Neque, proin adipiscing pretium, turpis vulputate purus massa. Rutrum
-          vestibulum velit pellentesque eget cras mi mi eu. Lectus risus amet
-          ornare imperdiet eget ultricies. Ullamcorper mattis cursus suspendisse
-          senectus diam. Interdum lacinia id lacus rutrum nec. Turpis arcu,
-          turpis nibh amet libero purus libero.
-        </p>
-      </aside>
+<article id="whoami" class="whoami">
+  <h3 class="whotitlemobile">Who am I?</h3>
+  <aside class="whotext" id="whotext">
+    <h3 class="whotitle">Who am I?</h3>
+    <p>You might wonder &quot;who is this beautiful long haired man?&quot;. <em>Great question!</em><br/>
+      My name is <strong>Christofer Schwarz</strong>, I’m a Digital Designer, Filmmaker and Web designer. When I was a prepubescent, shorter haired boy I discovered the wonders of image and video manipulation, and ever since I photoshopped my first image I was hooked. <br/>
+      <br/>
+      If I’m not staring at a screen I’m probably with my girlfriend and her two pet mice, Mus-Mus and Kevin, hanging out with my friends or watching a Formula 1 Grand Prix. <br/>
+      <br/>
+      They say &quot;curiosity killed the cat&quot;, good thing I’m a human because I’m as curious as they come. If someone answers a question with &quot;I don’t know&quot;, I’ll be the first person googling away on my phone. <br/>
+      But I digress. <br/>
+      <br/>
+      If you want to see some of my favorite work, look below. <br/>
+      <br/>
+      <small><em>Oh, and if you want tho change the vibe,<br/>
+      refresh the site or press the </em><img
+              alt="Palette"
+              src="img/palette-white.svg"
+              style="height: 14px; margin: 0 0 0 2px;"
+            />.</small></p>
+  </aside>
+  <aside class="containerwhobild">
+    <section class="whobild"></section>
+    <section class="whobild-bg"></section>
+  </aside>
+</article>
 
-      <aside class="containerwhobild">
-        <section class="whobild"></section>
-        <section class="whobild-bg"></section>
-      </aside>
-    </article>
+<!-- Vad kan jag göra? -->
 
-    <!-- Vad kan jag göra? -->
+<article id="whatcanido" class="whatcanido">
+  <section id="whatintro" class="whatintro">
+    <h2>What can I do?</h2>
+  </section>
+</article>
 
-    <article id="whatcanido" class="whatcanido">
-      <section id="whatintro" class="whatintro">
-        <h2>What can I do?</h2>
-      </section>
-    </article>
+<!-- Projekt 1 -->
+<article class="proj1">
+  <div class="projimg">
+    <h1 class="projtitle">The Story of Lump</h1>
+    <h1 class="projsubtitle">Storytelling, Adobe Animate &amp; After Effects</h1>
+    <iframe class="lumpvideo" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="projtext">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <ul style="color: white; margin: 40px 0 0 0">
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</li>
+      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+      <li> sed do eiusmod tempor incididunt ut labore et</li>
+    </ul>
+  </div>
+</article>
 
-    <!-- Projekt 1 -->
-    <article class="proj1">
-      <h1 class="projtitle">Place-holder - Title for project 1</h1>
-    </article>
+<!-- Projekt 2 -->
+<article class="proj2">
+  <div class="projtext">
+    <h1 class="projtitle">Norgald <small>Cybersecurity</small></h1>
+    <h1 class="projsubtitle" style="margin: 32px 0;">Redesign and new graphic profile</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <img src="img/norgald/old-site.png" alt="Norgalds old website"  style="width: 100%; margin-top: 40px;"> </div>
+  <div class="projbild">
+    <h1 class="projsubtitle" style="margin: 16px 0;">Our solution</h1>
+    <img src="img/norgald/new.png" alt="Norgalds new website" class="norgald"> </div>
+</article>
 
-    <!-- Projekt 2 -->
-    <article class="proj2">
-      <h1 class="projtitle">Place-holder - Title for project 2</h1>
-    </article>
+<!-- Projekt 3 --><!--
+<article class="proj3">
+  <h1 class="projtitle" style="color: black"> Place-holder - Title for project 3 </h1>
+</article>--> 
 
-    <!-- Projekt 3 -->
-    <article class="proj3">
-      <h1 class="projtitle" style="color: black">
-        Place-holder - Title for project 3
-      </h1>
-    </article>
+<!-- Projekt 4 -->
+<article class="proj4">
+  <div class="projmid"> <a href="http://linktr.ee/poddracing" target="_blank"> <img src="img/poddracing/pr-omslag.png" alt="PoddRacing thumbnail" class="poddomslag"> </a> </div>
+  <div class="projmid">
+    <h1 class="projsubtitle" style="margin: 0 0 40px 0; line-height: 120%;">My friend Alex and I created one of Swedens most popular F1-Podcasts</h1>
+    <ul style="color: white; margin: 0 0 40px 0">
+      <li>If you search for "Formel 1" in Apple Podcasts or Spotify, PoddRacing is on the first page.</li>
+      <li>We have multiple times broken in to the top 100 of all sports podcasts listened to in Sweden.</li>
+      <li>Since we started, our downloads have grown with an average rate of more than 60% per month.</li>
+    </ul>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <a href="https://podcasts.apple.com/us/podcast/poddracing-sveriges-snabbaste-formel-1-podcast/id1612823984?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" target="_blank"> <img src="img/poddracing/apple.svg" alt="listen on apple podcasts" class="listen" style=" margin: 40px 0 0 4%;"></a> <a href="https://open.spotify.com/show/4eQZIb5gYtkb4mamEZ2zht" target="_blank"> <img src="img/poddracing/spotify.svg" alt="listen on spotify" class="listen" style=" margin: 40px 4% 0 4%;"></a> </div>
+</article>
 
-    <!-- Projekt 4 -->
-    <article class="proj4">
-      <h1 class="projtitle">Place-holder - Title for project 4</h1>
-    </article>
-
-    <!-- kontaktdel -->
-    <article id="contact" class="contact">
-      <h2>Get in touch</h2>
-      <aside class="contactleft">
-        <p>
-          If you want to contact me you can choose between e-mailing me
-          directly, hit me up on social media or fill in the form.
-        </p>
-        <br />
-        <a href="mailto:christofer.schwarz@hotmail.com" class="email"
+<!-- kontaktdel -->
+<article id="contact" class="contact">
+  <h2>Get in touch</h2>
+  <aside class="contactleft">
+    <p> If you want to contact me you can choose between e-mailing me
+      directly, hit me up on social media or fill in the form. </p>
+    <br />
+    <a href="mailto:christofer.schwarz@hotmail.com" class="email"
           >Christofer.Schwarz@hotmail.com</a
-        >
-        <br />
-        <br />
-
-        <a href="#"
-          ><img src="img/social/facebook.svg" alt="Facebooks logo"
-        /></a>
-        <a href="#"
-          ><img src="img/social/instagram.svg" alt="Instagrams logo"
-        /></a>
-        <a href="#"
-          ><img src="img/social/linkedin.svg" alt="Linkedins logo"
-        /></a>
-        <a href="#"
+        > <br />
+    <br />
+    <a href="http://instagram.com/christoferschwarz" target="_blank"
+          > <img src="img/social/instagram.svg" alt="Instagrams logo"
+        /> </a> <a href="http://www.linkedin.com/in/christoferschwarz" target="_blank"
+          > <img src="img/social/linkedin.svg" alt="Linkedins logo"
+        /> </a> <a href="https://discordapp.com/users/531935395785474059" target="_blank"
           ><img src="img/social/discord.svg" alt="Discoords logo"
-        /></a>
-        <a href="#"><img src="img/social/youtube.svg" alt="Youtubes logo" /></a>
-        <br /><br />
-
-        <br /><br />
-      </aside>
-      <aside class="form">
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">E-Mail</label>
-          <input type="text" id="email" name="email" />
-          <label for="tel">Phone Number</label>
-          <input type="text" id="tel" name="tel" />
-          <label for="message">Your message</label>
-          <input type="text" id="message" name="message" />
-          <input type="button" class="input" value="Send" onclick="kontakt()" />
-        </form>
-        <i class="error" id="error"
+        /></a> <a href="https://www.youtube.com/channel/UC8D9j3MFFE6WN4UfDKQIsPA" target="_blank"><img src="img/social/youtube.svg" alt="Youtubes logo" /></a> <br />
+    <br />
+    <br />
+    <br />
+  </aside>
+  <aside class="form">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+      <label for="email">E-Mail</label>
+      <input type="text" id="email" name="email" />
+      <label for="tel">Phone Number</label>
+      <input type="text" id="tel" name="tel" />
+      <label for="message">Your message</label>
+      <input type="text" id="message" name="message" />
+      <input type="button" class="input" value="Send" onclick="kontakt()" />
+    </form>
+    <i class="error" id="error"
           >Can't send, please contact me in a different way. Sorry!</i
-        >
-      </aside>
-    </article>
-    <!-- footer -->
-    <footer class="footer" id="footer">
-      <section class="footercontainer">
-        <img alt="My signature" src="img/signature.png" class="signature" />
-
-        <section class="footersocial">
-          <a href="index.html#footer"
-            ><img
-              src="img/social/facebook-svart.svg"
-              alt="Facebooks logo"
-              class="footersocialicon"
-          /></a>
-          <a href="index.html#footer"
+        > </aside>
+</article>
+<!-- footer -->
+<footer class="footer" id="footer">
+  <section class="footercontainer"> <img alt="My signature" src="img/signature.png" class="signature" />
+    <section class="footersocial"> <a href="http://instagram.com/christoferschwarz" target="_blank"
             ><img
               src="img/social/instagram-svart.svg"
               alt="Instagrams logo"
               class="footersocialicon"
-          /></a>
-          <a href="index.html#footer"
+          /></a> <a href="http://www.linkedin.com/in/christoferschwarz" target="_blank"
             ><img
               src="img/social/linkedin-svart.svg"
               alt="Linkedins logo"
               class="footersocialicon"
-          /></a>
-          <a href="index.html#footer"
+          /></a> <a href="https://discordapp.com/users/531935395785474059" target="_blank"
             ><img
               src="img/social/discord-svart.svg"
               alt="Discoords logo"
               class="footersocialicon"
-          /></a>
-          <a href="index.html#footer"
+          /></a> <a href="https://www.youtube.com/channel/UC8D9j3MFFE6WN4UfDKQIsPA" target="_blank"
             ><img
               src="img/social/youtube-svart.svg"
               alt="Youtubes logo"
               class="footersocialicon"
-          /></a>
-        </section>
-      </section>
-
-      <p class="copyright">© Christofer Schwarz 2021</p>
-    </footer>
-    <!-- scrollknapp -->
-    <button
+          /></a> </section>
+  </section>
+  <p class="copyright">© Christofer Schwarz 2021</p>
+</footer>
+<!-- scrollknapp -->
+<button
       type="button"
       onClick="scrollaupp()"
       class="scrollaupp"
       id="scrollaupp"
-    >
-      <img alt="Arrow up" src="img/up_arrow.svg" style="height: 80%" />
-    </button>
-
-    <script src="script.js"></script>
-  </body>
+    > <img alt="Arrow up" src="img/up_arrow.svg" style="height: 80%" /> </button>
+<script src="script.js"></script>
+</body>
 </html>

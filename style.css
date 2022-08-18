@@ -3,8 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* Ändrar utseendet på scollbaren */
-::-webkit-scrollbar {
+/* Ändrar utseendet på scollbaren */ ::-webkit-scrollbar {
   width: 14px;
   height: 18px;
 }
@@ -48,6 +47,7 @@ p {
   display: flex;
   width: 100%;
   height: auto;
+  transition: 0.4s ease;
 }
 .name {
   position: -webkit-sticky;
@@ -67,6 +67,7 @@ h1 {
 .logo {
   text-decoration: none;
   color: #000000;
+  height: 100%;
 }
 .navbar {
   display: flex;
@@ -86,6 +87,7 @@ h1 {
   display: inline-block;
   margin: 0 12px;
   border-radius: 4px;
+  transition: 0.4s ease;
 }
 .menubtn {
   display: inline-block;
@@ -121,6 +123,34 @@ button {
 .hamburger {
   display: none;
 }
+.mobilemenu {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.4s ease;
+}
+.mobilenav {
+  clear: both;
+}
+.mobilenav ul {
+  margin: 40px 32px 0 auto;
+  list-style: none;
+}
+.mobilenav li {
+  font-size: 6vw;
+  text-align: end;
+  margin: 40px;
+  border-radius: 4px;
+}
+.mobilenav li a {
+  color: black;
+  text-decoration: none;
+}
 .whoami {
   display: flex;
   position: relative;
@@ -133,6 +163,7 @@ button {
 }
 .whotitle {
   display: block;
+  margin: 0 0 24px 0;
 }
 .whotitlemobile {
   display: none;
@@ -187,17 +218,26 @@ h3 {
   font-size: 2.618em;
   font-weight: 400;
   color: white;
-  margin: 0 0 24px 0;
+  /*margin: 0 0 24px 0;*/
 }
 .proj1 {
-  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  height: auto;
   background-color: #151515;
-  padding: 40px;
+  padding: 100px 40px 100px;
 }
 .proj2 {
-  height: 1000px;
-  background-color: #9f4647;
-  padding: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: stretch;
+  height: auto;
+  background-color: #2d1630;
+  padding: 100px 40px 100px;
 }
 .proj3 {
   height: 1000px;
@@ -205,9 +245,47 @@ h3 {
   padding: 40px;
 }
 .proj4 {
-  height: 1000px;
-  background-color: #646464;
-  padding: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: stretch;
+  height: auto;
+  background-color: #3E3E3E;
+  padding: 80px 40px;
+}
+.poddomslag {
+  width: 100%;
+}
+.listen {
+  width: 20vw;
+  max-width: 340px;
+}
+.lumpvideo {
+  width: 45vw;
+  height: 28.125vw;
+  margin-top: 40px;
+}
+.projtext {
+  width: 38%;
+  align-self: center;
+}
+.projimg {
+  width: 55%;
+  padding: 16px;
+  align-self: center;
+}
+.projmid {
+  max-width: 800px;
+  padding: 16px;
+  align-self: center;
+  margin: 0 5% 0 0;
+}
+.projtext li {
+  margin: 16px 0;
+}
+.projmid li {
+  margin: 16px 0;
 }
 .whatcanido {
   scroll-margin-top: 138px;
@@ -215,11 +293,21 @@ h3 {
 .projtitle {
   margin: 0;
   color: white;
+  font-size: 5.5vw;
+}
+.projsubtitle {
+  margin: 32px 16px;
+  font-size: 2.2vw;
+  color: white;
+}
+.norgald {
+  width: 50vw;
 }
 .whatintro {
   padding: 40px;
   text-align: center;
   margin-top: 100px;
+  transition: 0.4s ease;
 }
 .whattext {
   text-align: center;
@@ -341,6 +429,7 @@ label {
   height: auto;
   padding: 60px 5% 0 5%;
   margin-top: 150px;
+  transition: 0.4s ease;
 }
 .footercontainer {
   display: flex;
@@ -364,9 +453,7 @@ label {
 }
 /* mobile */
 @media only screen and (max-width: 525px) {
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     font-size: 2.618em;
     line-height: 120%;
   }
@@ -406,16 +493,78 @@ label {
     margin: 0 auto;
     top: auto;
     right: auto;
-    height: 360px;
+    height: 77.45vw;
   }
   .whobild {
-    height: 360px;
+    width: 60vw;
+    height: 77.45vw;
+  }
+  .whobild-bg {
+    width: 60vw;
+    height: 77.45vw;
   }
   .name h1 {
     margin: 16px 16px;
   }
   .whotitle {
     display: none;
+  }
+  .proj1 {
+    flex-direction: column;
+    align-content: center;
+    padding: 40px 10%;
+  }
+  .projtext {
+    width: 100%;
+    padding: 16px;
+    align-self: center;
+  }
+  .projimg {
+    width: 100%;
+    padding: 16px;
+    align-self: center;
+  }
+  .projtext li {
+    margin: 8px 0;
+  }
+  .projtitle {
+    margin: 0;
+    font-size: 10vw;
+  }
+  .projsubtitle {
+    margin: 16px 8px;
+    font-size: 5vw;
+  }
+  .lumpvideo {
+    width: 80vw;
+    height: 45vw;
+    margin-top: 16px;
+  }
+  .proj4 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    height: auto;
+    padding: 60px 40px;
+  }
+  .listen {
+    width: 100%;
+    margin: 0;
+  }
+  .poddomslag {
+    width: 100%;
+    margin: 0;
+  }
+  .projmid {
+    margin: 0;
+  }
+  .proj2 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 80px 40px 80px;
+  }
+  .norgald {
+    width: 100%;
   }
   .contact {
     height: 840px;
@@ -459,6 +608,10 @@ label {
     font-size: 4.236em;
     line-height: 120%;
   }
+  h2, h3 {
+    font-size: 2.618em;
+    line-height: 120%;
+  }
   .menu {
     display: none;
   }
@@ -494,16 +647,81 @@ label {
     margin: 0 auto;
     top: auto;
     right: auto;
-    height: 600px;
+    height: 77.45vw;
   }
   .whobild {
-    height: 600px;
+    width: 60vw;
+    height: 77.45vw;
+  }
+  .whobild-bg {
+    width: 60vw;
+    height: 77.45vw;
   }
   .name h1 {
     margin: 20px 40px;
   }
   .whotitle {
     display: none;
+  }
+  .whatintro h2 {
+    margin: 0;
+  }
+  .proj1 {
+    flex-direction: column;
+    align-content: center;
+    padding: 80px 10%;
+  }
+  .projtext {
+    width: 90%;
+    padding: 24px;
+    align-self: center;
+  }
+  .projimg {
+    width: 90%;
+    padding: 24px;
+    align-self: center;
+  }
+  .projtext li {
+    margin: 8px 0;
+  }
+  .projtitle {
+    margin: 0;
+    font-size: 8vw;
+  }
+  .proj2 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 80px 40px 80px;
+  }
+  .norgald {
+    width: 100%;
+  }
+  .proj4 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    height: auto;
+    padding: 60px 40px;
+  }
+  .listen {
+    width: 32vw;
+    margin: 32px 0 0 16px;
+  }
+  .poddomslag {
+    width: 100%;
+    margin: 0;
+  }
+  .projmid {
+    margin: 0;
+  }
+  .projsubtitle {
+    margin: 16px 8px;
+    font-size: 4vw;
+  }
+  .lumpvideo {
+    width: 70vw;
+    height: 39.375vw;
+    margin-top: 16px;
   }
   .contact {
     height: 840px;
